@@ -13,21 +13,21 @@ The package contains a function calculating the extrinsic defensibility
 for any position on a 30-meter DEM.
 
 **NOTE: This has not been thoroughly tested, nor has it been generalized
-to DEMs of other resolutions.**
+to DEMs of other resolutions. Mileage may vary.**
 
-## Extrinsic defensibility is defined in Bocinsky 2013:
+> Bocinsky, R. Kyle
+> [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1862-3428),
+> (2014). Extrinsic site defensibility and landscape-based
+> archaeological inference: An example from the Northwest Coast.
+> *Journal of Anthropological Archaeology* 35: 164–176.
+> <https://doi.org/10.1016/j.jaa.2014.05.003>
 
-## Bocinsky, R. Kyle. 2013. Extrinsic site defensibility and landscape-based archaeological
+This defensibility index is a rasterization of one defined by Martindale
+and Supernant (2009):
 
-## inference: An example from the Northwest Coast. Journal of Anthropological Archaeology nn(nn):nnn–nnn.
-
-## This defensibility index is a rasterization of one defined
-
-## by Martindale and Supernant (2009):
-
-## Martindale, Andrew and Kisha Supernant. 2009. Quantifying the defensiveness of defended
-
-## sites on the northwest coast of North America. Journal of Anthropological Archaeology 28(2):191–204.
+> Martindale, Andrew and Kisha Supernant, (2009). Quantifying the
+> defensiveness of defended sites on the northwest coast of North
+> America. *Journal of Anthropological Archaeology* 28(2):191–204.
 
 ## Installation
 
