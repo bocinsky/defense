@@ -51,6 +51,17 @@ meve_di <-
   defense::meve %>%
   defense::di_calculate_defensibility_index()
 
+meve_di
+#> class      : RasterBrick 
+#> dimensions : 727, 643, 467461, 3  (nrow, ncol, ncell, nlayers)
+#> resolution : 30, 30  (x, y)
+#> extent     : 716780.7, 736070.7, 4115058, 4136868  (xmin, xmax, ymin, ymax)
+#> crs        : +proj=utm +zone=12 +datum=NAD83 +units=m +no_defs 
+#> source     : memory
+#> names      : defensibility, visibility, elevation 
+#> min values :     0.2504158,  0.0000000, 0.3800069 
+#> max values :     0.6601504,  0.8240741, 0.8062357
+
 raster::plot(meve_di$defensibility, zlim = c(0,1))
 ```
 
