@@ -7,7 +7,9 @@
 elev.difference.angular(obs_elev, dem)
 }
 \arguments{
-\item{obs_elev}{}
+\item{obs_elev}{height of the observer, in meters}
+
+\item{dem}{A 30 m DEM}
 }
 \value{
 the angular elevation difference raster

@@ -1,2 +1,57 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # defense
-Calculating the raster defensibility index as in Bocinsky 2014
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of defense is to implement the raster defensibility index as
+reported in Bocinsky 2014.
+
+The package contains a function calculating the extrinsic defensibility
+for any position on a 30-meter DEM.
+
+**NOTE: This has not been thoroughly tested, nor has it been generalized
+to DEMs of other resolutions.**
+
+## Extrinsic defensibility is defined in Bocinsky 2013:
+
+## Bocinsky, R. Kyle. 2013. Extrinsic site defensibility and landscape-based archaeological
+
+## inference: An example from the Northwest Coast. Journal of Anthropological Archaeology nn(nn):nnn–nnn.
+
+## This defensibility index is a rasterization of one defined
+
+## by Martindale and Supernant (2009):
+
+## Martindale, Andrew and Kisha Supernant. 2009. Quantifying the defensiveness of defended
+
+## sites on the northwest coast of North America. Journal of Anthropological Archaeology 28(2):191–204.
+
+## Installation
+
+You can install the development version of defense from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("bocinsky/defense")
+```
+
+## Example
+
+The `defense` package includes a 30 m DEM of Mesa Verde National Park
+for testing. You might try to do something like this:
+
+``` r
+library(defense)
+
+meve_di <-
+  defense::meve %>%
+  defense::di_calculate_defensibility_index()
+
+raster::plot(meve_di$defensibility, zlim = c(0,1))
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />

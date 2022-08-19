@@ -2,7 +2,8 @@
 #'
 #' NOTE: Build to only work on 30m DEMs!
 #'
-#' @param obs_elev
+#' @param obs_elev height of the observer, in meters
+#' @param dem A 30 m DEM
 #'
 #' @return the angular elevation difference raster
 #' @export
